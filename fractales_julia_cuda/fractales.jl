@@ -5,6 +5,7 @@ p = Polynomial([1,0,3,4], :x);
 ∂p = derivative(p);
 p,∂p
 
+
 using CUDA;
 function newton_fractal!(t::CuDeviceVector{ComplexF32}, α::ComplexF32, ϵ::Float32, maxiter::Int32, colors::CuDeviceVector{Float32})
     i = threadIdx().x + (blockIdx().x - 1) * blockDim().x
