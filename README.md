@@ -1,2 +1,2 @@
 # JuliaProjects
-Mes projets Julia et apprentissage
+Mes projets Julia
